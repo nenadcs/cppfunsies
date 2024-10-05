@@ -1,19 +1,16 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main()
 {
-    ifstream inputFile("arg_log");
+  std::ifstream inputFile("arg_log");
 
-    string line; 
-    cout << "File Content: " << endl;
+  std::string line; 
+  std::cout << "File Content: " << std::endl;
     while (getline(inputFile, line)) {
-        cout << line << endl;
+      std::cout << line << std::endl;
     }
 
     inputFile.close();
-
-    return 0;
 }
